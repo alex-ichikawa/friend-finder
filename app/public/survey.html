@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Survey</title>
 </head>
 
@@ -28,7 +29,7 @@
 
         <h3><strong>Question 1</strong></h3>
         <h4>How awesome is Formula 1?</h4>
-        <select name="dropdown" id="q1">
+        <select name="dropdown" class="questions" id="q1">
             <option value=""></option>
             <option value="1">1 (Super Awesome)</option>
             <option value="2">2</option>
@@ -39,7 +40,7 @@
 
         <h3><strong>Question 2</strong></h3>
         <h4>How good is Fernando Alonso?</h4>
-        <select name="dropdown" id="q2">
+        <select name="dropdown" class="questions" id="q2">
             <option value=""></option>
             <option value="1">1 (God like)</option>
             <option value="2">2</option>
@@ -50,7 +51,7 @@
 
         <h3><strong>Question 3</strong></h3>
         <h4>How psyched were you for Kimi's first win since 2013?</h4>
-        <select name="dropdown" id="q3">
+        <select name="dropdown" class="questions" id="q3">
             <option value=""></option>
             <option value="1">1 (Super Psyched)</option>
             <option value="2">2</option>
@@ -61,7 +62,7 @@
 
         <h3><strong>Question 4</strong></h3>
         <h4>How dissapointing has Vettel been this season?</h4>
-        <select name="dropdown" id="q4">
+        <select name="dropdown" class="questions" id="q4">
             <option value=""></option>
             <option value="1">1 (Very)</option>
             <option value="2">2</option>
@@ -72,7 +73,7 @@
 
         <h3><strong>Question 5</strong></h3>
         <h4>How much does McLaren suck now?</h4>
-        <select name="dropdown" id="q5">
+        <select name="dropdown" class="questions" id="q5">
             <option value=""></option>
             <option value="1">1 (Sooo much)</option>
             <option value="2">2</option>
@@ -83,7 +84,7 @@
 
         <h3><strong>Question 6</strong></h3>
         <h4>What are your expectations for Red Bull Honda next year?</h4>
-        <select name="dropdown" id="q6">
+        <select name="dropdown" class="questions" id="q6">
             <option value=""></option>
             <option value="1">1 (McLaren 2015 status)</option>
             <option value="2">2</option>
@@ -94,7 +95,7 @@
 
         <h3><strong>Question 7</strong></h3>
         <h4>Will Gasly challenge Verstappen at all next year?</h4>
-        <select name="dropdown" id="q7">
+        <select name="dropdown" class="questions" id="q7">
             <option value=""></option>
             <option value="1">1 (Not at all)</option>
             <option value="2">2</option>
@@ -105,7 +106,7 @@
 
         <h3><strong>Question 8</strong></h3>
         <h4>What do you expect from the 2019 aero regs?</h4>
-        <select name="dropdown" id="q8">
+        <select name="dropdown" class="questions" id="q8">
             <option value=""></option>
             <option value="1">1 (A lot less passing)</option>
             <option value="2">2</option>
@@ -116,7 +117,7 @@
 
         <h3><strong>Question 9</strong></h3>
         <h4>Are Liberty Media doing a good job with F1?</h4>
-        <select name="dropdown" id="q9">
+        <select name="dropdown" class="questions" id="q9">
             <option value=""></option>
             <option value="1">1 (Aweful job)</option>
             <option value="2">2</option>
@@ -127,7 +128,7 @@
 
         <h3><strong>Question 10</strong></h3>
         <h4>Gentlemen, a short view back to the past. Thirty years ago, Niki Lauda told us ‘take a monkey, place him into the cockpit and he is able to drive the car.’ Thirty years later, Sebastian told us ‘I had to start my car like a computer, it’s very complicated.’ And Nico Rosberg said that during the race – I don’t remember what race - he pressed the wrong button on the wheel. Question for you both: is Formula One driving today too complicated with twenty and more buttons on the wheel, are you too much under effort, under pressure? What are your wishes for the future concerning the technical programme during the race? Less buttons, more? Or less and more communication with your engineers?</h4>
-        <select name="dropdown" id="q10">
+        <select name="dropdown" class="questions" id="q10">
             <option value=""></option>
             <option value="1">1 (Can you repeat the question?)</option>
             <option value="2">2</option>
@@ -136,7 +137,10 @@
             <option value="5">5 (Can you repeat the question?)</option>
         </select>
 
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">Submit</button>
+
     </div>
+    <script src="survey.js"></script>
 </body>
 
 </html>

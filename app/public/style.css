@@ -3,6 +3,10 @@
     padding: 50px;
 }
 
-h1 {
+#title {
     border-bottom: black 1px solid;
+}
+
+#submit{
+    margin-top: 50px;
 }
