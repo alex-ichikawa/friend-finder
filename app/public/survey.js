@@ -35,6 +35,8 @@ $("#submit").on("click", function (event) {
                 $("#q10").val()
             ]
         }
-        console.log(userData);
+        $.post("/api/friends", userData)
+        .then(function(data){
+        });
     }
-})
+});
