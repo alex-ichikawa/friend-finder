@@ -21,6 +21,10 @@ app.get("/survey", function (req, res) {
     res.sendFile(path.join(__dirname, "app/public/survey.html"));
 });
 
+app.get("/match", function (req, res) {
+    res.send("hi there");
+});
+
 // Displays all characters
 app.get("/api/friends", function (req, res) {
     return res.json(friends);

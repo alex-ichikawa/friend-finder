@@ -37,6 +37,14 @@ $("#submit").on("click", function (event) {
         }
         $.post("/api/friends", userData)
         .then(function(data){
+            window.open("/match");
+        });
+    }
+    else {
+        swal({
+            title: 'Please complete the whole form before submitting',
+            animation: false,
+            customClass: 'animated jackInTheBox'
         });
     }
 });
