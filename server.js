@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("app/public"));
 
-// let scoreArray = [];
+
 let bestIndex;
 
 
@@ -25,8 +25,7 @@ app.get("/survey", function (req, res) {
 });
 
 app.get("/match", function (req, res) {
-    // res.json(friends[bestIndex]);
-    res.send(`<html><body><h1>You're best match is</h1><br><h3>${friends[bestIndex].name}</h3><br><img src="${friends[bestIndex].photo}"</body></html>`)
+    res.send(`<html><body><h1>Your best match is:</h1><br><h3>${friends[bestIndex].name}</h3><br><img src="${friends[bestIndex].photo}"</body></html>`)
 });
 
 // Displays all friends
