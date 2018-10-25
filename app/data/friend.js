@@ -33,7 +33,7 @@ let friends = [
     },
     {
         name: "Sebastian Vettel",
-        photo: "https://www.gannett-cdn.com/-mm-/3d231402eae798b3509a0abb2192ec5dfd6181e9/c=327-0-3543-2418/local/-/media/2018/04/07/USATODAY/USATODAY/636587090600756502-vettel.jpg?width=534&height=401&fit=crop",
+        photo: "https://d3cm515ijfiu6w.cloudfront.net/wp-content/uploads/2017/06/01133253/1022.6666666666666x767__origin__0x0_Sebastian_Vettel_finger-700x367.jpg",
         scores: [
             5,
             2,

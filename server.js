@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("app/public"));
 
-let scoreArray = [];
+// let scoreArray = [];
 let bestIndex;
 
 
@@ -36,6 +36,7 @@ app.get("/api/friends", function (req, res) {
 
 // Create New Friends
 app.post("/api/friends", function (req, res) {
+    let scoreArray = [];
     let newFriend = req.body
     let o = 0
     friends.push(newFriend);
