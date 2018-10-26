@@ -1,3 +1,5 @@
+/* Home Page
+==========================================*/
 #main {
     background-color: #dbdde0;
     padding: 50px 50px 25px 50px;
@@ -8,10 +10,28 @@
     border-bottom: black 1px solid;
 }
 
-#submit{
-    margin-top: 50px;
-}
-
 #btnSurvey {
     margin-top: 25px;
+}
+
+/* Survey Page
+=================================*/
+#submit{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    border-top:#dbdde0 1px solid;
+    margin-bottom: 10px;
+}
+
+#apiLink2 {
+    color: gray;
+}
+
+/* Match Page
+===================================*/
+#matchPhoto {
+    max-height: 400px;
 }
