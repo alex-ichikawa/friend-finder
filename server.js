@@ -61,6 +61,11 @@ app.post("/api/friends", function (req, res) {
 
 });
 
+// 404
+app.use(function(req, res){
+    res.send("404 not found");
+  });
+
 
 app.listen(PORT, function () {
     console.log(`Listening on port ${PORT}`);
